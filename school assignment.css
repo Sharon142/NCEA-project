@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+    color: black;
+}
+p {
+    text-align: left;
+    color: black
+}
+body {
+    background-color: white;
+}
+<style>
+div {
+  border: 3px solid black;
+  padding: 40px 40px 55px;
+  background-color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Write a title here</h2>
+
+<div>The contents are over here</div>
