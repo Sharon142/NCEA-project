@@ -9,22 +9,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="benjamin franklin.css">
     </head>
-    <div class="topnav" id="myTopnav">
-      <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/school%20assignment.html" class="active">Home</a>
-      <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/reference.html">Bibliography</a>
-      <div class="dropdown">
-        <button class="dropbtn">Dropdown
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/rosalind%20franklin.html">Rosalind Franklin</a>
-          <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/Janet%20Taylor.html">Janet Taylor</a>
-          <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/Isaac%20Newton.html">Isaac Newton</a>
-          <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/Sophia%20Louisa%20Jex-Blake.html">Sophia Louisa Jex-Blake</a>
-          <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/Thomas%20Edison.html">Thomas Edison</a>
-          <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/Grace%20Hopper.html">Grace Hopper</a>
-          <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/Neil%20deGrasse%20Tyson.html">Neil deGrasse Tyson</a>
-         </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/Current/NCEA-project/homepage.html">Home page</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/Current/NCEA-project/rosalind%20franklin.html">Rosalind Franklin</a>
+      <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/Current/NCEA-project/Janet%20Taylor.html">Janet Taylor</a>
+      <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/Current/NCEA-project/Grace%20Hopper.html">Grace Hopper</a>
+      <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/Current/NCEA-project/Sophia%20Louisa%20Jex-Blake.html">Sophia Louisa Jex-Blake</a>
+      <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/Current/NCEA-project/Isaac%20Newton.html">Isaac Newton</a>
+      <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/Current/NCEA-project/Thomas%20Edison.html">Thomas Edison</a>
+      <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/Current/NCEA-project/Neil%20deGrasse%20Tyson.html">Neil deGrasse Tyson</a>
+      <a href="file:///C:/Users/Sharon%20Culas/Desktop/Tech/Current/NCEA-project/reference.html">Bibliography</a>
+ </div>
+ 
+ <!-- Use any element to open the sidenav -->
+<span onclick="openNav()">Information centre</span>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+...
+</div>
     <body>
         <h1>Benjamin Franklin</h1>
         <p>Benjamin Franklin was one of the Founding Fathers and a polymath, inventor, scientist, printer, politician, freemason and he has a<br>
