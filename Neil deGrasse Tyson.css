@@ -20,7 +20,7 @@
 
 /* Change the color of links on hover */
 .navbar a:hover {
-  background-color: burlywood;
+  background-color: rgb(14, 13, 13);
   color: black;
 }
 
