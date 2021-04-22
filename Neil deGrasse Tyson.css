@@ -11,7 +11,7 @@
 .navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #eb6161;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -20,12 +20,12 @@
 
 /* Change the color of links on hover */
 .navbar a:hover {
-  background-color: #ddd;
+  background-color: burlywood;
   color: black;
 }
 
 /* Add a color to the active/current link */
 .navbar a.active {
-  background-color: #4CAF50;
+  background-color: #eef8ee;
   color: white;
 }
