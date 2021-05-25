@@ -1,3 +1,6 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 /* The Overlay (background) */
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */   
