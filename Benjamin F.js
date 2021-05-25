@@ -1,9 +1,9 @@
-  /* Open when someone clicks on the span element */
+  // Full screen navigation will appear when someone clicks "open" //
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
   }
   
-  /* Close when someone clicks on the "x" symbol inside the overlay */
+  // Full screen navigation will slide to the left when someone clicks on the "x" symbol inside the overlay //
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
