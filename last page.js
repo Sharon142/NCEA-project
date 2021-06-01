@@ -1,3 +1,3 @@
-function myFuntion() {
-    document.body.style.backgroundColor = "cyan"; //adding a background colour//    
-}
+function myFunction() {
+    document.body.style.backgroundColor = "red";
+  }
