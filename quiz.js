@@ -9,7 +9,7 @@ function myFunction() {
         document.body.style.backgroundColor = "Green";
         Answer.innerHTML = "You're Correct!!!";  
     } else {
-        document.body.style.backgroundColor = "Red";
+        document.body.style.backgroundColor = "Green";
         Answer.innerHTML = "Wrong answer!!!";  
     }
        
