@@ -7,7 +7,7 @@ function myFunction() {
         verdict.innerHTML = "You're Correct!!!";
     } else if (Response.string == "Discovery of tobbaco mosaic virus"){
         document.body.style.backgroundColor = "Green";
-        verdict.innerHTML = "You're Correct!!!";  
+        verdict.innerHTML = "Correct!!!";  
     } else {
         document.body.style.backgroundColor = "Red";
         verdict.innerHTML = "Wrong answer!!!";  
