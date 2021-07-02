@@ -1,5 +1,4 @@
 function myFunction() { //If the code is written between these brackets {} of my function, the code will run.//
-    function myFunction() { //If the code is written between these brackets {} of my function, the code will run.//
         let verdict = document.querySelector ("#response");//Response is the answer from the user and the verdict//
         let Response = document.querySelector("#myPara");//will determine whether or not the answer is correct.//
         //let is a type of variable code.  Response is the id of the input received by the user.//
@@ -18,4 +17,3 @@ function myFunction() { //If the code is written between these brackets {} of my
     }    
     
        
-}
