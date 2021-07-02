@@ -10,33 +10,14 @@
         
         <body>
         <h2>Quiz</h2>
-        <ol>
-        <h1> What is Rosalind Franklin famous for?</h1> 
-        <input id = "Response">
-        <button onclick="myFunction()">Submit</button>    
-        <h1>How many books did Neil Tyson publish?</h1>
-        <input id = "Response">
-        <button onclick="myFunction()">Submit</button>
-        <h1>Who was the first person to "debug a system"?</h1>
-        <input id = "Response">
-        <button onclick="myFunction()">Submit</button>
-        <h1>Why was Isaac Newton pulled out of school?</h1>
-        <input id = "Response">
-        <button onclick="myFunction()">Submit</button>
-        <h1>What are Thomas Edison's inventions?</h1>
-        <input id = "Response">
-        <button onclick="myFunction()">Submit</button>    
-        <h1>Are Janet Taylor's inventions still used today?</h1>
-        <input id = "Response">
-        <button onclick="myFunction()">Submit</button>
-        <h1>How did Benjamin Franklin discover electricity?</h1>
-        <input id = "Response">
-        <button onclick="myFunction()">Submit</button>
-        <h1>What is Sophia Louise Jex-Blake known as?</h1>
-        <input id = "Response">
-        <button onclick= "myFunction()">Submit</button>
-                </ol>
-        
+        <h1>Quiz</h1>
+        <h2 id="question"></h2>
+        <input id="answer">
+        <button onclick="quizFunction()">Submit</button>
+        <br><br><br>
+        <button onclick="nextQuestion()">Next Question</button>
+        <h2 id="verdict"></h2>
+
         <script src="quiz.js" async defer></script>
     </body>
 </html>
