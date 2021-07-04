@@ -20,7 +20,7 @@ function quizFunction() {
 }
 function nextQuestion() {
     number += 1;
-    text += "What is " + questionList[number] + "?";
+    text += questionList[number] + "?";
     Question.innerHTML = text;
 }
 
