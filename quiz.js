@@ -1,8 +1,8 @@
 const Question = document.querySelector("#question");
 const Answer = document.querySelector("#answer");
 const Verdict = document.querySelector("#verdict");
-const questionList = ["What is Rosalind Franklin famous for", "What is Grace Hopper's occupation", "How many books did Neil Tyson wrote"];
-const answerList = ["Discovery of DNA", "Computer scientist", "14",];
+const questionList = ["What is Rosalind Franklin famous for", "What is Grace Hopper's occupation", "How many books did Neil Tyson wrote", "Isaac Newton discovered gravity during the Black Plague (True/False)"];
+const answerList = ["Discovery of DNA", "Computer scientist", "14", "true"];
 const congratsList = ["Correct!", "Well Done!", "Amazing!"];
 const wrongList = ["Incorrect", "Nope.", "No! You're wrong!"];
 var number = 0; 
