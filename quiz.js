@@ -1,12 +1,12 @@
 const Question = document.querySelector("#question");
 const Answer = document.querySelector("#answer");
 const Verdict = document.querySelector("#verdict");
-const questionList = ["2 + 2", "3 + 3", "4 + 4"];
-const answerList = ["4", "6", "8"];
+const questionList = ["What is Rosalind Franklin famous for", "What is Grace Hopper's occupation", "How many books did Neil Tyson wrote"];
+const answerList = ["", "", ""];
 const congratsList = ["Correct!", "Well Done!", "Amazing!"];
 const wrongList = ["Incorrect", "Nope.", "No! You're wrong!"];
 var number = 0; 
-let text = "What is " + questionList[number] + "?";
+let text =  questionList[number] + "?";
 Question.innerHTML = text;
 function quizFunction() {
     if (Answer.value == answerList[number]) {
