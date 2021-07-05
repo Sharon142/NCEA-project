@@ -8,7 +8,7 @@ const wrongList = ["Incorrect", "Nope.", "No! You're wrong!"];
 var number = 0; 
 let text =  questionList[number] + "?";
 Question.innerHTML = text;
-for (let index = 0; index < 1; index++) {
+
 function quizFunction() {
     if (Answer.value == answerList[number]) {
         document.body.style.backgroundColor = "Green";
@@ -31,6 +31,6 @@ function previousQuestion() {
     Question.innerHTML = text;
 }
 
-}
+
 
        
