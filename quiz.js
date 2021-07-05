@@ -24,4 +24,10 @@ function nextQuestion() {
     Question.innerHTML = text;
 }
 
+function previousQuestion() {
+    number -= 1;
+    text -= questionList[number] + "?";
+    Question.innerHTML = text;
+}
+
        
