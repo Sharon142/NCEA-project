@@ -28,18 +28,15 @@ function quizFunction() { //Function of the quiz//
     text = "";
 }
 
-if (questionList==1) {
 function nextQuestion() { //this code enables the user to answer the following questions
         number += 1;
     text += questionList[number] + "?";
-    Question.innerHTML = text;  
-}
-} else (questionList==8) ;{
+ Question.innerHTML = text;  
+} 
 function previousQuestion() { //this code enables the user to go back to previous questions
     number -= 1;
     text -= questionList[number] + "?";
     Question.innerHTML = text;
-}
 }
 
 
