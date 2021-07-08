@@ -28,13 +28,12 @@ function quizFunction() { //Function of the quiz//
     text = "";
 }
 function nextQuestion() { //this code enables the user to answer the following questions
-    for (let i = 0; i < 8; i++) {
-    number += 1;
+        number += 1;
     text += questionList[number] + "?";
     Question.innerHTML = text;
     if (i === 8) { break; }
     }
-}
+
 
 
 function previousQuestion() { //this code enables the user to go back to previous questions
