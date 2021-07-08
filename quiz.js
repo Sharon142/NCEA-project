@@ -31,7 +31,7 @@ function nextQuestion() { //this code enables the user to answer the following q
         number += 1;
     text += questionList[number] + "?";
     Question.innerHTML = text;
-    if (i === 8) { break; }
+    
     }
 
 
