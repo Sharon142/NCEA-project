@@ -37,6 +37,11 @@ function previousQuestion() { //this code enables the user to go back to previou
     number -= 1;
     text -= questionList[number] + "?";
     Question.innerHTML = text;
+    for (let i = 0; i < 0; i++) {
+        if (i === 0) { break; }
+        
+      }
+    
 }
 
 
