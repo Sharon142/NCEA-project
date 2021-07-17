@@ -24,25 +24,20 @@ function quizFunction() { //Function of the quiz//
         //will appear
         document.body.style.backgroundColor = "Red";
         Verdict.innerHTML = wrongList[number];
-    }
+    } 
     text = "";
 }
 
 function nextQuestion() { //this code enables the user to answer the following questions
         number += 1;
     text += questionList[number] + "?";
- Question.innerHTML = text;  
+ Question.innerHTML = text;   
+    
 } 
-function previousQuestion() { //this code enables the user to go back to previous questions
+
+function previousQuestion() {  //this code enables the user to go back to previous questions
     number -= 1;
     text -= questionList[number] + "?";
     Question.innerHTML = text;
-    for (let i = 0; i < 0; i++) {
-        if (i === 0) { break; }
-        
-      }
     
 }
-
-
-       
