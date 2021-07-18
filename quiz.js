@@ -29,11 +29,16 @@ function quizFunction() { //Function of the quiz//
 }
 
 function nextQuestion() { //this code enables the user to answer the following questions
+       if(document.querySelector("#question")<2) {
         number += 1;
-    text += questionList[number] + "?";
- Question.innerHTML = text;   
+        text += questionList[number] + "?";
+     Question.innerHTML = text;  
+       }  else {
+           //reference: https://www.w3schools.com/js/tryit.asp?filename=tryjs_button_disabled
+       }
     
 } 
+
 
 function previousQuestion() {  //this code enables the user to go back to previous questions
     number -= 1;
