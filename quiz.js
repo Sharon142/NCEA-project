@@ -1,5 +1,6 @@
 const Question = document.querySelector("#question");//used to link the html coding using '#question'
 const Answer = document.querySelector("#answer");//input from the user
+const Disable = document.querySelector("#disable");
 const Verdict = document.querySelector("#verdict");//determines whether or not the question is correct
 const questionList = ["What is Rosalind Franklin famous for", "What is Grace Hopper's occupation", 
 "How many books did Neil Tyson wrote", "Isaac Newton discovered gravity during the Black Plague (True/False)",
@@ -29,12 +30,15 @@ function quizFunction() { //Function of the quiz//
 }
 
 function nextQuestion() { //this code enables the user to answer the following questions
-       if(document.querySelector("#question")<2) {
+       if(document.querySelector("#question")<1) {
         number += 1;
         text += questionList[number] + "?";
      Question.innerHTML = text;  
-       }  else {
-           //reference: https://www.w3schools.com/js/tryit.asp?filename=tryjs_button_disabled
+       } else{
+        function disableElement() {
+            document.querySelector("btn01").disabled = true;
+        }
+          
        }
     
 } 
