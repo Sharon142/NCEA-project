@@ -28,23 +28,10 @@ function quizFunction() { //Function of the quiz//
     text = "";
 }
 
-function nextQuestion() { //this code enables the user to answer the following questions
-       number += 1;
-        text += questionList[number] + "?";
-     Question.innerHTML = text;  
-}
-        function disableElement() {
-            document.querySelector("btn01").disabled = true;
-        }
-          
-       
-    
-
-
-
-function previousQuestion() {  //this code enables the user to go back to previous questions
-    number -= 1;
-    text -= questionList[number] + "?";
-    Question.innerHTML = text;
-    
-}
+function disableBtn() {
+    document.getElementById("myBtn").disabled = false;
+  }
+  
+  function enableBtn() {
+    document.getElementById("myBtn").disabled = true;
+  }
