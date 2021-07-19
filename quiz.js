@@ -35,3 +35,15 @@ function disableBtn() {
   function enableBtn() {
     document.getElementById("myBtn").disabled = true;
   }
+
+  function nextQuestion() {
+    number += 1;
+    text += "What is " + questionList[number] + "?";
+    Question.innerHTML = text;
+}
+
+function previousQuestion() {
+    number -= 1;
+    text -= "What is " + questionList[number] + "?";
+    Question.innerHTML = text;
+}
