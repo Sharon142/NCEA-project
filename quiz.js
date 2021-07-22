@@ -29,21 +29,16 @@ function quizFunction() { //Function of the quiz//
 }
 
 function disableBtn() {
-    document.getElementById("myBtn").disabled = false;
+    document.getElementById("myBtn").disabled = false;//the button is disabled
   }
   
   function enableBtn() {
-    document.getElementById("myBtn").disabled = true;
+    document.getElementById("myBtn").disabled = true;//the button is not disabled
   }
 
   function nextQuestion() {
     number += 1;
-    text += "What is " + questionList[number] + "?";
+    text += questionList[number] + "?";//questions will be asked in a consecutive order
     Question.innerHTML = text;
 }
 
-function previousQuestion() {
-    number -= 1;
-    text -= "What is " + questionList[number] + "?";
-    Question.innerHTML = text;
-}
