@@ -28,15 +28,7 @@ function quizFunction() { //Function of the quiz//
     text = "";
 }
 
-function disableBtn() {
-    document.getElementById("myBtn").disabled = false;//the button is disabled
-  }
-  
-  function enableBtn() {
-    document.getElementById("myBtn").disabled = true;//the button is not disabled
-  }
-
-  function nextQuestion() {
+function nextQuestion() {
     number += 1;
     text += questionList[number] + "?";//questions will be asked in a consecutive order
     Question.innerHTML = text;
