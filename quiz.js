@@ -33,5 +33,5 @@ function nextQuestion() {
     text += questionList[number] + "?";//questions will be asked in a consecutive order
     Question.innerHTML = text;
 }
-input("#answer").lower().upper()
+input("#answer").lower()/upper()
 
