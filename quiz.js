@@ -7,7 +7,6 @@ const questionList = ["What is Rosalind Franklin famous for", "What is Grace Hop
   "Benjamin Franklin died at 48 (true/false)"];//list of questions//
 const answerList = ["Discovery of DNA", "Computer scientist", "14", "true", 
 "Luni-Solar and Horary Tables", "Nikola Tesla", "fought to study medicine", "false"];//list of answers//
-let answerList = input("questionList").lower()
 const congratsList = ["Correct!", "Well Done!", "Amazing!"];//output of words if the answer is correct//
 const wrongList = ["Incorrect", "Nope.", "No! You're wrong!"];//output of words if the answer is wrong//
 var number = 0; 
@@ -34,4 +33,5 @@ function nextQuestion() {
     text += questionList[number] + "?";//questions will be asked in a consecutive order
     Question.innerHTML = text;
 }
+input("#answer").lower().upper()
 
