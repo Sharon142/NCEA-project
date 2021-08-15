@@ -58,7 +58,7 @@ header h3 {
     border-radius: 1rem;
     cursor:pointer;
     outline:none;
-    transition: all .5s ease;
+    transition: all .3s ease;
 }
 
 .btn-edit{
