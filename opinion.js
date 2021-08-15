@@ -119,7 +119,7 @@ editModalForm.addEventListener('submit', e=>{
     e.preventDefault();
     db.collection('users').doc(id).update({
         firstName: editModalForm.firstName.value
-        lastName: editModalForm.lastName.value,
+        lastNames: editModalForm.lastName.value,
         invention: editModalForm.phone.value,
         achievement: editModalForm.email.value,
     })
