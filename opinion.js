@@ -20,8 +20,8 @@ const tr =
 <tr data id= '${doc.id}'>
     <td>${doc.data().firstName}</td>
     <td>${doc.data().lastName}</td>
-    <td>${doc.data().phone}</td>
-    <td>${doc.data().email}</td>
+    <td>${doc.data().invention}</td>
+    <td>${doc.data().achievement}</td>
     <td>
     <button class="btn btn-edit">Edit </button>
     <button class="btn btn-delete">Delete </button>
@@ -38,8 +38,8 @@ editModal.classList.add(`modal-show`);
 id = doc.id;
 editModalForm.firstName.value = doc.data().firstName;
 editModalForm.lastName.value = doc.data().lastName;
-editModalForm.phone.value = doc.data().phone;
-editModalForm.email.value = doc.data().email;
+editModalForm.invention.value = doc.data().invention;
+editModalForm.achievement.value = doc.data().achievement;
 });
 
 //Click delete user
@@ -60,8 +60,8 @@ btnAdd.addEventListener('click', () =>{
 
     addModalForm.firstName.value = '';
     addModalForm.lastName.value = '';
-    addModalForm.phone.value = '';
-    addModalForm.email.value = '';
+    addModalForm.invention.value = '';
+    addModalForm.achievement.value = '';
 });
 
 //User click anywhere outside the modal
@@ -120,8 +120,8 @@ editModalForm.addEventListener('submit', e=>{
     db.collection('users').doc(id).update({
         firstName: editModalForm.firstName.value
         lastName: editModalForm.lastName.value,
-        phone: editModalForm.phone.value,
-        email: editModalForm.email.value,
+        invention: editModalForm.phone.value,
+        achievement: editModalForm.email.value,
     })
     editModal.classList.remove('modal-show');
 
