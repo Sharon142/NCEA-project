@@ -57,7 +57,7 @@ btnDelete.addEventListener('click', () => {
 //Click add user
 btnAdd.addEventListener('click', () =>{
     addModal.classList.add('modal-show');
-
+     console.log('open modal');
     addModalForm.firstName.value = '';
     addModalForm.lastName.value = '';
     addModalForm.invention.value = '';
@@ -119,7 +119,7 @@ editModalForm.addEventListener('submit', e=>{
     e.preventDefault();
     db.collection('users').doc(id).update({
         firstName: editModalForm.firstName.value
-        lastNames: editModalForm.lastName.value,
+        lastName: editModalForm.lastName.value,
         invention: editModalForm.phone.value,
         achievement: editModalForm.email.value,
     })
