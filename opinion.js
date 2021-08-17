@@ -57,8 +57,7 @@ btnDelete.addEventListener('click', () => {
 //Click add user
 btnAdd.addEventListener('click', () =>{
     addModal.classList.add('modal-show');
-     console.log('open modal');
-    addModalForm.firstName.value = '';
+     addModalForm.firstName.value = '';
     addModalForm.lastName.value = '';
     addModalForm.invention.value = '';
     addModalForm.achievement.value = '';
