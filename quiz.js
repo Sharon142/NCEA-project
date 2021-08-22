@@ -33,5 +33,8 @@ function nextQuestion() {
     text += questionList[number] + "?";//questions will be asked in a consecutive order
     Question.innerHTML = text;
 }
-input("#answer").lower().upper()
+const letters = (() => {
+    const caps = [...Array(26)].map((val, i) => String.fromCharCode(i + 65));
+    return caps.concat(caps.map(letter => letter.toLowerCase()));
+  })();
 
