@@ -21,6 +21,10 @@ function quizFunction() { //Function of the quiz//
         //and one of the words from the congrats list will appear//
         Verdict.innerHTML = congratsList[number];//verdict is a code used to show whether or not the answer
         //correct
+        const small = str.toLowerCase();
+const capital = str.toUpperCase();
+const number= str.toValue();
+const total = answerList.concat(small, capital, number);const small = str.toLowerCase();
     } else { //if the answer is wrong the background will turn red and one of the words from the wrong list
         //will appear
         document.body.style.backgroundColor = "Red";
