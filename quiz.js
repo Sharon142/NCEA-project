@@ -5,9 +5,8 @@ const questionList = ["What is Rosalind Franklin famous for", "What is Grace Hop
 "How many books did Neil Tyson wrote", "Isaac Newton discovered gravity during the Black Plague (True/False)",
  "What is Janet Taylor's first book", "Who is Thomas Edison's rival", "What is Jex-Blake's STEM contribution",
   "Benjamin Franklin died at 48 (true/false)"];//list of questions//
-const answerList = ["Discovery of DNA", "Computer scientist", "14", "true", 
-"Luni-Solar and Horary Tables", "Nikola Tesla", "fought to study medicine", "false"];//list of answers//
-
+const answerList = ["Discovery of DNA", "Computer scientist", "14", "True", 
+"Luni-Solar and Horary Tables", "Nikola Tesla", "Fought to study medicine", "False"];//list of answers//
 const congratsList = ["Correct!", "Well Done!", "Amazing!"];//output of words if the answer is correct//
 const wrongList = ["Incorrect", "Nope.", "No! You're wrong!"];//output of words if the answer is wrong//
 var number = 0; 
@@ -21,10 +20,7 @@ function quizFunction() { //Function of the quiz//
         //and one of the words from the congrats list will appear//
         Verdict.innerHTML = congratsList[number];//verdict is a code used to show whether or not the answer
         //correct
-        const small = str.toLowerCase();
-const capital = str.toUpperCase();
-const number= str.toValue();
-const total = answerList.concat(small, capital, number);const small = str.toLowerCase();
+        
     } else { //if the answer is wrong the background will turn red and one of the words from the wrong list
         //will appear
         document.body.style.backgroundColor = "Red";
