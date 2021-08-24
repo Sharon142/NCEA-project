@@ -7,6 +7,8 @@ const questionList = ["What is Rosalind Franklin famous for", "What is Grace Hop
   "Benjamin Franklin died at 48 (true/false)"];//list of questions//
 const answerList = ["Discovery of DNA", "Computer scientist", "14", "True", 
 "Luni-Solar and Horary Tables", "Nikola Tesla", "Fought to study medicine", "False"];//list of answers//
+const answers = ["discovery of dna", "computer scientist", "14", "true", 
+"luni-solar and horary tables", "nikola tesla", "fought to study medicine", "false"]
 const congratsList = ["Correct!", "Well Done!", "Amazing!"];//output of words if the answer is correct//
 const wrongList = ["Incorrect", "Nope.", "No! You're wrong!"];//output of words if the answer is wrong//
 var number = 0; 
@@ -15,7 +17,7 @@ let text =  questionList[number] + "?";//the text appeared will be the one of th
 Question.innerHTML = text;//innerHTML is HTML coding inside one of the HTML components//
 
 function quizFunction() { //Function of the quiz//
-    if (Answer.value == answerList[number]) { //if/else statement//
+    if (Answer.value == answerList.concat(answers)[number]) { //if/else statement//
         document.body.style.backgroundColor = "Green"; //if the answer is correct the background will turn//
         //and one of the words from the congrats list will appear//
         Verdict.innerHTML = congratsList[number];//verdict is a code used to show whether or not the answer
