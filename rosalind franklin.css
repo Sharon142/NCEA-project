@@ -5,7 +5,7 @@ div {
   background-color: white;
   width: 100px;
   border: 15px solid green;
-  padding: 0px;
+  padding: 10px;
   margin: 0px;
 }
 /* The Overlay (background) */
