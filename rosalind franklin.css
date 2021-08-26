@@ -6,7 +6,7 @@ div {
   width: 3000px;
   border: 15px solid green;
   padding: 500px;
-  margin: 20px;
+  margin: 0px;
 }
 /* The Overlay (background) */
 .overlay {
