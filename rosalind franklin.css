@@ -1,10 +1,6 @@
 body {
   font-family:Arial, Helvetica, sans-serif;
 }
-div{
-  padding-right: 10px;
-  padding-left: 80px;
-}
 /* The Overlay (background) */
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */   
