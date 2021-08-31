@@ -29,6 +29,11 @@ function quizFunction() { //Function of the quiz//
         document.body.style.backgroundColor = "Red";
         Verdict.innerHTML = wrongList[number];
     } 
+
+    if (Answer.value == "discovery of dna"){
+        alert("change 'd' to 'D' and 'dna' to 'DNA'");
+    }
+
     text = "";
 }
 
