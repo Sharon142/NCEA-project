@@ -5,11 +5,11 @@ const questionList = ["What is Rosalind Franklin famous for", "What is Grace Hop
 "How many books did Neil Tyson wrote", "Isaac Newton discovered gravity during the Black Plague (True/False)",
  "What is Janet Taylor's first book", "Who is Thomas Edison's rival", "What is Jex-Blake's STEM contribution",
   "Benjamin Franklin died at 48 (true/false)"];//list of questions//
-const answerList = ["Discovery of DNA", "discovery of dna", "Computer scientist", "14", "True", 
+const answerList = ["Discovery of DNA", "Computer scientist", "14", "True", 
 "Luni-Solar and Horary Tables", "Nikola Tesla", "Fought to study medicine", "False"];//list of answers//
-const answers = ["discovery of dna", "computer scientist", "14", "true", 
-"luni-solar and horary tables", "nikola tesla", "fought to study medicine", "false"];//second set of correct answers
-const correct = [answerList.concat(answers)];//combining both sets of answers
+const answer = ["discovery of dna", "computer scientist", "14", "true", "luni-solar and horary tables", 
+"nikola tesla", "fought to study medicine", "false"];
+const correct = answerList.concat(answer);
 const congratsList = ["Correct!", "Well Done!", "Amazing!"];//output of words if the answer is correct//
 const wrongList = ["Incorrect", "Nope.", "No! You're wrong!"];//output of words if the answer is wrong//
 var number = 0; 
