@@ -31,7 +31,7 @@ function quizFunction() { //Function of the quiz//
     } 
 
     if (Answer.value == "discovery of dna"){
-        alert("change 'd' to 'D' and 'dna' to 'DNA'");
+        alert("change 'd' to 'D' and 'dna' to 'DNA'");//alert box for the first question
     }
 
     text = "";
