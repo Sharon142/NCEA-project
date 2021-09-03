@@ -11,3 +11,4 @@ for (let i = 0; i < combine.length; i++) {
 function stopFunction(){
 
 }
+
