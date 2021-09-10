@@ -27,11 +27,11 @@ function quizFunction() { //Function of the quiz//
         Verdict.innerHTML = wrongList[number];
     } 
 
-    if (Answer.value == "discovery of dna"){
-        alert("change 'd' to 'D' and 'dna' to 'DNA'");//alert box for the first question
-    }
+       text = "";
+}
 
-    text = "";
+if (Answer.value == "discovery of dna"){
+    alert("change 'd' to 'D' and 'dna' to 'DNA'");//alert box for the first question
 }
 
 function nextQuestion() {
