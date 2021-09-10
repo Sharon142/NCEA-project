@@ -15,7 +15,7 @@ let text =  questionList[number] + "?";//the text appeared will be the one of th
 Question.innerHTML = text;//innerHTML is HTML coding inside one of the HTML components//
 
 function quizFunction() { //Function of the quiz//
-    if (Answer.value == correct[number]) { //if/else statement//
+    if (Answer.value = answerList) { //if/else statement//
         document.body.style.backgroundColor = "Green"; //if the answer is correct the background will turn//
         //and one of the words from the congrats list will appear//
         Verdict.innerHTML = congratsList[number];//verdict is a code used to show whether or not the answer
