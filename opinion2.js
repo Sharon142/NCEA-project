@@ -39,7 +39,7 @@ id = doc.id;
 editModalForm.firstName.value = doc.data().firstName;
 editModalForm.lastName.value = doc.data().lastName;
 editModalForm.achievement.value = doc.data().achievement;
-editModalForm.achievement.value = doc.data().other;
+editModalForm.other.value = doc.data().other;
 });
 
 //Click delete user
@@ -107,8 +107,8 @@ addModalForm.addEventListener('submit', ()=>{
     db.collection('users').add({
         firstName: addModalForm.firstName.value,
         lastName: addModalForm.lastName.value,
-        phone: addModalForm..value,
-        email: addModalForm.email.value,
+        achievement: addModalForm.achievement.value,
+        other: addModalForm.other.value,
     });
 modalWrapper.classList.remove('modal-show');
 });
@@ -119,8 +119,8 @@ editModalForm.addEventListener('submit', e=>{
     db.collection('users').doc(id).update({
         firstName: editModalForm.firstName.value,
         lastName: editModalForm.lastName.value,
-        invention: editModalForm.phone.value,
-        achievement: editModalForm.email.value,
+        achievement: editModalForm.achievement.value,
+        other: editModalForm.other.value,
     })
     editModal.classList.remove('modal-show');
 
