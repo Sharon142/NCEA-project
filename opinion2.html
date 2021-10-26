@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Summary</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="opinion2.css">
+    </head>
+    <body>
+      <div class="container">
+          <header>
+          <h3>Summary</h3>
+          </header>
+          <div class="table-wrapper">
+        <table class="table-users">
+            <tr><th>First Name</th>
+                <th>Last Name</th>
+                <th>Invention</th>
+                    <th>Achievement</th>
+                    <th>Other</th>
+            </tr>
+           <tr>
+               <td>Rosalind</td>
+               <td>Franklin</td>
+               <td>Discovery of DNA</td>
+               <td>n/a</td>
+               <td>n/a</td>
+               <td><button class="btn btn-edit">Edit</button>
+                <button class="btn btn-delete">Delete</button></td>
+           </tr>
+        </table>
+        <td><button class="btn btn-add">Add user</td>
+            
+        </div>
+        <!--Edit Model-->
+        <div class="edit modal modal-wrapper">
+            <div class="modal">
+            <div class="modal-body">
+                <form class="form" autocomplete="off">
+                    <input type="text" name="firstName" placeholder="First Name">
+                    <input type="text"name="lastName" placeholder="Last Name">
+                    <input type="text"name="invention" placeholder="Invention">
+                    <input type="text"name="achievement" placeholder="Achievement">
+                    <button class="btn btn-modal">Submit</button>
+                </form>
+            </div>        
+        </div>
+<!--Add Model-->
+    <div class="add modal modal-wrapper">
+        <div class="modal">
+            <div class="modal-header"><h3>Add New User</h3></div>
+            <div class="modal-body">
+                <form class="form" autocomplete="off">
+                <input type ="text" name="firstName" placeholder="First Name">
+                <input type="text"name="lastName" placeholder="Last Name">
+                    <input type="text"name="invention" placeholder="Invention">
+                    <input type="text"name="achievement" placeholder="Achievement">
+                    <button class="btn btn-modal">Submit</button>
+                    </form>
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+<!--TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries-->
+
+<script>
+//Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBZZ2O0knmEzz_JlUYzM_ZTPkxkPQDwxlQ",
+  authDomain: "ncea-database.firebaseapp.com",
+  projectId: "ncea-database",
+  storageBucket: "ncea-database.appspot.com",
+  messagingSenderId: "373220596683",
+  appId: "1:373220596683:web:c16ce325bad654ab5c744e"
+};
+
+//Initialize Firebase
+const app = initializeApp(firebaseConfig);
+</script>
+
+<script src="opinion2.js" async defer></script>
+    </body>
+</html>
