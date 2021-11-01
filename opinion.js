@@ -61,6 +61,7 @@ btnAdd.addEventListener('click', () =>{
     addModal.classList.add('modal-show');
      addModalForm.firstName.value = '';
     addModalForm.lastName.value = '';
+    addModalForm.invention.value = '';
     addModalForm.achievement.value = '';
     addModalForm.other.value = '';
 });
