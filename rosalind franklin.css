@@ -14,7 +14,7 @@ img {
 div.absolute {
   position: absolute;
   bottom: 10;
-  right: -2; 
+  right: 2; 
 }
 /* The Overlay (background) */
 .overlay {
