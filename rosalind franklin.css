@@ -10,10 +10,7 @@ img {
   right: 0px;
   bottom:0px  
 }
-div.absolute {
-  position: absolute;
-  right: 0; 
-}
+
 /* The Overlay (background) */
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */   
