@@ -5,7 +5,11 @@ div {
 body {
   font-family:Arial, Helvetica, sans-serif;
 }
-
+img {
+  position: absolute;
+  right: 0px;
+  bottom: 10px;  
+}
 div.absolute {
   position: absolute;
   bottom: 0;
