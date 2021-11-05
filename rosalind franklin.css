@@ -8,11 +8,10 @@ body {
 img {
   position: absolute;
   right: 0px;
-  margin-top: 0px;  
+  bottom:0px  
 }
 div.absolute {
   position: absolute;
-  bottom: 0;
   right: 0; 
 }
 /* The Overlay (background) */
