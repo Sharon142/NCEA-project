@@ -8,7 +8,7 @@ body {
 img {
   position: absolute;
   right: 0px;
-  top: 150px;
+  bottom: -10px;
 }
 div.absolute {
   position: absolute;
