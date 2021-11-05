@@ -9,11 +9,11 @@ img {
   position: absolute;
   right: 0px;
   bottom: 150px;
-  z-index: -1;
+  
 }
 div.absolute {
   position: absolute;
-  bottom: 0;
+  bottom: 10;
   right: 0; 
 }
 /* The Overlay (background) */
