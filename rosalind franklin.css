@@ -10,6 +10,11 @@ img {
   right: 0px;
   top: 150px;
 }
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0; 
+}
 /* The Overlay (background) */
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */   
