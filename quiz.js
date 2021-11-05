@@ -1,3 +1,9 @@
+let userName = document.querySelector("#userName");
+let name = document.querySelector("#name");
+function input(){
+    name.innerHTML = ""
+    name.innerHTML = "Hello " + userName.value + ", welcome to my quiz.";
+}
 const Question = document.querySelector("#question");//used to link the html coding using '#question'
 const Answer = document.querySelector("#answer");//input from the user
 const Verdict = document.querySelector("#verdict");//determines whether or not the question is correct
