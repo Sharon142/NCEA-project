@@ -8,7 +8,7 @@ body {
 img {
   position: absolute;
   right: 0px;
-  top:0.5px  
+  bottom:10px  
 }
 
 /* The Overlay (background) */
