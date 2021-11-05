@@ -10,7 +10,7 @@ img {
   right: 0px;
   top: 150px;
 }
-div.fixed {
+div.absolute {
   position: fixed;
   bottom: 0;
   right: 0; 
