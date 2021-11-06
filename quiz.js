@@ -2,7 +2,7 @@ let userName = document.querySelector("#userName");
 let name = document.querySelector("#name");
 let greetings = document.querySelector("#greetings");
 let quiz = document.querySelector("#quiz");
-let iterationNumber = 0;
+let question = 0;
 quiz.style.display ="none"
 function input(){
     name.innerHTML = ""
@@ -34,11 +34,12 @@ function quizFunction() { //Function of the quiz//
         //and one of the words from the congrats list will appear//
         Verdict.innerHTML = congratsList[number];//verdict is a code used to show whether or not the answer
         //correct
-        
+       score +=1 
     } else { //if the answer is wrong the background will turn red and one of the words from the wrong list
         //will appear
         document.body.style.backgroundColor = "Red";
         Verdict.innerHTML = wrongList[number];
+        score=score
     } 
 
        text = "";
@@ -53,5 +54,6 @@ function nextQuestion() {
     text += questionList[number] + "?";//questions will be asked in a consecutive order
     Question.innerHTML = text;
 }
+
 
 
