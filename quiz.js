@@ -3,6 +3,7 @@ let name = document.querySelector("#name");
 let greetings = document.querySelector("#greetings");
 let quiz = document.querySelector("#quiz");
 let answer = document.querySelector("#answer");
+let answerList = document.querySelector("#answerList")
 quiz.style.display ="none"
 let question = 0;
 function input(){
