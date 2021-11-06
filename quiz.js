@@ -10,7 +10,7 @@ function input(){
     name.innerHTML = "Hello " + userName.value + ", welcome to my quiz.";
     greetings.style.display ="none"
     quiz.style.display ="block"
-    answer.style.display ="none"
+    answerList.style.display ="none"
     questionList.innerHTML = questionList[iterationNumber];
    }
 score=0
