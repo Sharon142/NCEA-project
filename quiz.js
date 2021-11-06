@@ -1,10 +1,10 @@
 let userName = document.querySelector("#userName");
 let name = document.querySelector("#name");
-let greeting = document.querySelector("#greeting");
+let greetings = document.querySelector("#greetings");
 function input(){
     name.innerHTML = ""
     name.innerHTML = "Hello " + userName.value + ", welcome to my quiz.";
-    greeting.style.display ="none"
+    greetings.style.display ="none"
 }
 const Question = document.querySelector("#question");//used to link the html coding using '#question'
 const Answer = document.querySelector("#answer");//input from the user
