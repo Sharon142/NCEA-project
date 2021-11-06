@@ -53,7 +53,7 @@ function nextQuestion() {
 }
 
 function submit(){
-if (answer=answerList) {
+if (answer=Verdict) {
     score += 1;
 } else {
     score=score
