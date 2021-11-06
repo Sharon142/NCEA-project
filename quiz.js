@@ -9,6 +9,7 @@ function input(){
     greetings.style.display ="none"
     quiz.style.display ="block"
 }
+score=0
 const Question = document.querySelector("#question");//used to link the html coding using '#question'
 const Answer = document.querySelector("#answer");//input from the user
 const Verdict = document.querySelector("#verdict");//determines whether or not the question is correct
@@ -49,6 +50,14 @@ function nextQuestion() {
     number += 1;
     text += questionList[number] + "?";//questions will be asked in a consecutive order
     Question.innerHTML = text;
+}
+
+function submit(){
+if (answer=answerList) {
+    score=score+1
+} else {
+    score=score
+}
 }
  
 
