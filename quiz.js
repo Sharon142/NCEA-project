@@ -2,6 +2,8 @@ let userName = document.querySelector("#userName");
 let name = document.querySelector("#name");
 let greetings = document.querySelector("#greetings");
 let quiz = document.querySelector("#quiz");
+let answer = document.querySelector("#answer");
+quiz.style.display ="none"
 let question = 0;
 quiz.style.display ="none"
 function input(){
@@ -19,8 +21,6 @@ const questionList = ["What is Rosalind Franklin famous for", "What is Grace Hop
 "How many books did Neil Tyson wrote", "Isaac Newton discovered gravity during the Black Plague (True/False)",
  "What is Janet Taylor's first book", "Who is Thomas Edison's rival", "What is Jex-Blake's STEM contribution",
   "Benjamin Franklin died at 48 (true/false)"];//list of questions//
-const answerList = ["Discovery of DNA", "Computer scientist", "14", "True", 
-"Luni-Solar and Horary Tables", "Nikola Tesla", "Fought to study medicine", "False"];//list of answers//
 const congratsList = ["Correct!", "Well Done!", "Amazing!"];//output of words if the answer is correct//
 const wrongList = ["Incorrect", "Nope.", "No! You're wrong!"];//output of words if the answer is wrong//
 var number = 0; 
