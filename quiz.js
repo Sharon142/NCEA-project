@@ -2,12 +2,14 @@ let userName = document.querySelector("#userName");
 let name = document.querySelector("#name");
 let greetings = document.querySelector("#greetings");
 let quiz = document.querySelector("#quiz");
+let iterationNumber = 0;
 quiz.style.display ="none"
 function input(){
     name.innerHTML = ""
     name.innerHTML = "Hello " + userName.value + ", welcome to my quiz.";
     greetings.style.display ="none"
     quiz.style.display ="block"
+    questionList.innerHTML = questionList[iterationNumber];
    }
 score=0
 const Question = document.querySelector("#question");//used to link the html coding using '#question'
