@@ -1,6 +1,7 @@
 let userName = document.querySelector("#userName");
 let name = document.querySelector("#name");
 let greetings = document.querySelector("#greetings");
+let quiz = document.querySelector("#quiz");
 function input(){
     name.innerHTML = ""
     name.innerHTML = "Hello " + userName.value + ", welcome to my quiz.";
