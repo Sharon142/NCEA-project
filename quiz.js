@@ -52,13 +52,4 @@ function nextQuestion() {
     Question.innerHTML = text;
 }
 
-function submit(){
-if (answer=Verdict) {
-    score += 1;
-} else {
-    score=score
-}
-console.log(score);
-}
- 
 
