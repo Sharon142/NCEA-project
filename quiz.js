@@ -54,10 +54,11 @@ function nextQuestion() {
 
 function submit(){
 if (answer=answerList) {
-    score=score+1
+    score += 1;
 } else {
     score=score
 }
+console.log(score);
 }
  
 
