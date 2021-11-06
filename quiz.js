@@ -12,7 +12,7 @@ function input(){
     quiz.style.display ="block"
     questionList.innerHTML = questionList[iterationNumber];
    }
-score=0
+let score=0
 const Question = document.querySelector("#question");//used to link the html coding using '#question'
 const Answer = document.querySelector("#answer");//input from the user
 const Verdict = document.querySelector("#verdict");//determines whether or not the question is correct
