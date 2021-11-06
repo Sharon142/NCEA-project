@@ -12,7 +12,6 @@ function input(){
     quiz.style.display ="block"
     questionList.innerHTML = questionList[iterationNumber];
    }
-let score=0
 const Question = document.querySelector("#question");//used to link the html coding using '#question'
 const Answer = document.querySelector("#answer");//input from the user
 const Verdict = document.querySelector("#verdict");//determines whether or not the question is correct
@@ -35,13 +34,11 @@ function quizFunction() { //Function of the quiz//
         //and one of the words from the congrats list will appear//
         Verdict.innerHTML = congratsList[number];//verdict is a code used to show whether or not the answer
         //correct
-       score +=1 
     } else { //if the answer is wrong the background will turn red and one of the words from the wrong list
         //will appear
         document.body.style.backgroundColor = "Red";
         Verdict.innerHTML = wrongList[number];
-        score=score
-    } 
+     } 
 
        text = "";
 }
