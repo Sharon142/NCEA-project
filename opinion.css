@@ -13,4 +13,5 @@ body{
 .container{
     max-width: 50rem;
     margin: 2rem auto;
+    background-color: sandybrown;
 }
