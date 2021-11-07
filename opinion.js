@@ -1,6 +1,24 @@
 //Add Modal
 const addModal = document.querySelector('.add-modal');
 const btnAdd = document.querySelector('.btn-add');
+const tableUsers = document.querySelector()
+
+//Create element and render scientists
+const renderUser = doc => {
+    const tr = `
+    <tr>
+            <td>${doc.data().firstName}</td>
+            <td>${doc.data().lastName}</td>
+            <td>${doc.data().invention}</td>
+            <td>${doc.data().achievement}</td>
+            <td>${doc.data().other}</td>
+            <td>
+                <button class="btn btn-edit">Edit</button>
+                <button class="btn btn-delete">Delete</button>
+            </td>
+        </tr>
+    `;
+}
 
 //Click add button
 btnAdd.addEventListener('click', () =>{
@@ -17,6 +35,6 @@ window.addEventListener('click',  e =>{
 //Get all scientists
 db.collection('users').get().then(querySnapshot => {
     querySnapshot.forEach(doc => {
-        console.log(doc.data());
+        renderUser(doc);
     })
 })
