@@ -34,10 +34,8 @@ window.addEventListener('click',  e =>{
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-  import { initializeApp } from "firebase/app";
   const db = firebase.firestore();
-  const app = initializeApp(firebaseConfig);
-
+ 
 //Get all scientists
 db.collection('user').get().then(querySnapshot => {
     querySnapshot.forEach(doc => {
