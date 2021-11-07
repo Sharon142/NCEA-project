@@ -32,25 +32,7 @@ window.addEventListener('click',  e =>{
     }
 });
 
- // Import the functions you need from the SDKs you need
- import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
- // TODO: Add SDKs for Firebase products that you want to use
- // https://firebase.google.com/docs/web/setup#available-libraries
-
- // Your web app's Firebase configuration
- const firebaseConfig = {
-   apiKey: "AIzaSyAVA7vrkI_VNgQMLOM_glvRxYwJ05RnGzg",
-   authDomain: "users-feaa8.firebaseapp.com",
-   projectId: "users-feaa8",
-   storageBucket: "users-feaa8.appspot.com",
-   messagingSenderId: "606694220683",
-   appId: "1:606694220683:web:8ca0115dea4173eeb3c58e"
- };
-
- // Initialize Firebase
- const app = initializeApp(firebaseConfig);
-
-//Get all scientists
+ //Get all scientists
 const db= db.collection('user').get().then(querySnapshot => {
     querySnapshot.forEach(doc => {
         console.log(doc.data());
