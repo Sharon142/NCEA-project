@@ -1,5 +1,7 @@
+//Add Modal
+const addModal = document.querySelector('.add-modal');
 const btnAdd = document.querySelector('.btn-add');
 
 btnAdd.addEventListener('click', () =>{
-    console.log('open modal');
+    addModal.classList.add('modal-show');
 });
