@@ -87,8 +87,10 @@ header h3{
 }
 
 .btn-add{
-    color:var(--primary-color);
-    border: var(--primary-color);
+  width: 6rem;
+  height: 2rem;
+  background-color: var(--primary-color);
+  border:none;
 }
 
 .btn-add:hover{
