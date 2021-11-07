@@ -41,4 +41,5 @@ header h3{
 
 .table-users th, .table-users td{
     background: yellow;
+    text-align: left;
 }
