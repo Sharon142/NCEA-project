@@ -46,3 +46,8 @@ header h3{
     border-bottom: 1px solid whitesmoke;
     padding: 0.5 rem;
 }
+
+.table-users th{
+    background: wheat;
+    padding: 1 rem auto;
+}
