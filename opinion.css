@@ -87,8 +87,8 @@ header h3{
 }
 
 .btn-add{
-    color:yellowgreen;
-    border: yellowgreen;
+    color:var(--primary-color);
+    border: var(--primary-color);
 }
 
 .btn-add:hover{
