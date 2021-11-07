@@ -1,7 +1,7 @@
 //Add Modal
 const addModal = document.querySelector('.add-modal');
 const btnAdd = document.querySelector('.btn-add');
-const tableUsers = document.querySelector()
+const tableUsers = document.querySelector('table-users')
 
 //Create element and render scientists
 const renderUser = doc => {
@@ -18,6 +18,7 @@ const renderUser = doc => {
             </td>
         </tr>
     `;
+    tableUsers.insertAdjacentHTML('beforeend', tr);
 }
 
 //Click add button
