@@ -32,6 +32,10 @@ window.addEventListener('click',  e =>{
     }
 });
 
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+
 //Get all scientists
 db.collection('user').get().then(querySnapshot => {
     querySnapshot.forEach(doc => {
