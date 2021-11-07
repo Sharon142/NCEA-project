@@ -110,4 +110,9 @@ header h3{
     background: #24232354;
 }
 
+.modal{
+    position: relative;
+    background: white;
+}
+
 
