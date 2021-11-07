@@ -9,5 +9,7 @@ btnAdd.addEventListener('click', () =>{
 
 //user click anywhere outside the form
 window.addEventListener('click',  e =>{
-console.log(e.target, addModal);
+    if (e.target === add){
+      addModal.classList.remove('modal-show');
+    }
 });
