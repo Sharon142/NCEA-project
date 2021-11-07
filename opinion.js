@@ -1,5 +1,4 @@
-/*Add Modal*/
-const addModal = document.querySelector('.add-modal');
+const addModal = document.querySelector('.add-modal');/*Add Modal*/
 const btnAdd = document.querySelector('.btn-add');
 const tableUsers = document.querySelector('table-users')
 
