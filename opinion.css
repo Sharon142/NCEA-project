@@ -54,9 +54,9 @@ header h3{
 
 .btn{
     background: transparent;
-    width: 10 rem;
-    height: 10 rem;
-    border-radius: 10rem;
+    width: 15 rem;
+    height: 15 rem;
+    border-radius: 15 rem;
     cursor:pointer;
     outline:none;
 }
