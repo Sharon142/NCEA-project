@@ -1,6 +1,6 @@
 const addModal = document.querySelector('.add-modal');
 const btnAdd = document.querySelector('.btn-add');
-const tableUsers = document.querySelector('table-users')
+const tableUsers = document.querySelector('.table-users');
 
 //Create element and render scientists
 const renderUser = doc => {
@@ -35,7 +35,7 @@ window.addEventListener('click',  e =>{
  //Get all scientists
 db.collection('user').get().then(querySnapshot => {
     querySnapshot.forEach(doc => {
-        console.log(doc.data());
+        renderUser(doc);
     })
 })
 
