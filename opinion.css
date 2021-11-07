@@ -108,6 +108,7 @@ header h3{
     left:0;
     top:0;
     background: #24232354;
+    display: none;
 }
 
 .modal{
