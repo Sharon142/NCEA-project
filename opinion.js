@@ -38,3 +38,19 @@ db.colection('user').get().then(querySnapshot => {
         renderUser(doc);
     })
 })
+
+"https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"
+ "https://firebase.google.com/docs/web/setup#available-libraries.js"
+ "https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js"
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAVA7vrkI_VNgQMLOM_glvRxYwJ05RnGzg",
+  authDomain: "users-feaa8.firebaseapp.com",
+  projectId: "users-feaa8",
+  storageBucket: "users-feaa8.appspot.com",
+  messagingSenderId: "606694220683",
+  appId: "1:606694220683:web:8ca0115dea4173eeb3c58e"
+};
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = firebase.firestore();
