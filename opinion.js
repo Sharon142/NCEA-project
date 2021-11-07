@@ -40,7 +40,7 @@ db.collection('user').get().then(querySnapshot => {
     })
 })
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+"https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
 "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
  "https://firebase.google.com/docs/web/setup#available-libraries.js"
  "https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js"
