@@ -13,3 +13,10 @@ window.addEventListener('click',  e =>{
       addModal.classList.remove('modal-show');
     }
 });
+
+//Get all scientists
+db.collection('users').get().then(querySnapshot => {
+    querySnapshot.forEach(doc => {
+        console.log(doc.data());
+    })
+})
