@@ -39,4 +39,4 @@ const db= db.collection('user').get().then(querySnapshot => {
     })
 })
 
-"https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js"
+
