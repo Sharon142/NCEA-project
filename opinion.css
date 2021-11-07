@@ -94,3 +94,9 @@ header h3{
   border:none;
 }
 
+.btn-add:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
