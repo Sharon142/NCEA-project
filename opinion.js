@@ -32,26 +32,22 @@ window.addEventListener('click',  e =>{
     }
 });
 
-  // Initialize Firebase
-  
-  
-  const db = firebase.firestore();
- 
 //Get all scientists
+const db = firebase.firestore();
 db.collection('user').get().then(querySnapshot => {
     querySnapshot.forEach(doc => {
         renderUser(doc);
     })
 })
 
-
-
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+"https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
  "https://firebase.google.com/docs/web/setup#available-libraries.js"
  "https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js"
 // Your web app's Firebase configuration
 const app = initializeApp(firebaseConfig);
 const firebaseConfig = {
-  apiKey: "AIzaSyAVA7vrkI_VNgQMLOM_glvRxYwJ05RnGzg",
+   apiKey: "AIzaSyAVA7vrkI_VNgQMLOM_glvRxYwJ05RnGzg",
   authDomain: "users-feaa8.firebaseapp.com",
   projectId: "users-feaa8",
   storageBucket: "users-feaa8.appspot.com",
