@@ -85,3 +85,13 @@ header h3{
 .table-wrapper{
     text-align: center;
 }
+
+.btn-add{
+    color:yellowgreen;
+    border: yellowgreen;
+}
+
+.btn-add:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
