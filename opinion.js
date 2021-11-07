@@ -9,8 +9,8 @@ const renderUser = doc => {
     <tr>
             <td>${doc.data().firstName}</td>
             <td>${doc.data().lastName}</td>
-            <td>${doc.data().invention}</td>
             <td>${doc.data().achievement}</td>
+            <td>${doc.data().invention}</td>
             <td>${doc.data().other}</td>
             <td>
                 <button class="btn btn-edit">Edit</button>
