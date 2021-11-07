@@ -127,4 +127,12 @@ header h3{
     padding: 2rem;
 }
 
+.modal-body{
+    padding:2rem;
+}
+
+input{
+    width:100%;
+}
+
 
