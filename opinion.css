@@ -113,6 +113,9 @@ header h3{
 .modal{
     position: relative;
     background: white;
+    text-align: center;
+    width: 25rem;
+    margin: 5rem auto;
 }
 
 
