@@ -33,7 +33,7 @@ window.addEventListener('click',  e =>{
 });
 
 //Get all scientists
-db.colection('user').get().then(querySnapshot => {
+db.collection('user').get().then(querySnapshot => {
     querySnapshot.forEach(doc => {
         renderUser(doc);
     })
