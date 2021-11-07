@@ -37,6 +37,7 @@ header h3{
 .table-users{
     width:90%;
     margin: 2rem auto;
+    border-collapse: collapse;
 }
 
 .table-users th, .table-users td{
