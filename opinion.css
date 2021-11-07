@@ -60,3 +60,13 @@ header h3{
     cursor:pointer;
     outline:none;
 }
+
+.btn-edit{
+    color:var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn-edit:hover{
+    background-color: var(--primary-color);
+    color: wheat;
+}
