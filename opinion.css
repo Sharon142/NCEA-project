@@ -71,3 +71,13 @@ header h3{
     background-color: var(--primary-color);
     color: white;
 }
+
+.btn-delete{
+    color:var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn-delete:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
