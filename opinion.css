@@ -33,3 +33,8 @@ header h3{
     color:white;
     margin-left: 1.5rem;
 }
+
+.table-users{
+    width:90%;
+    margin: 2rem auto;
+}
