@@ -56,7 +56,7 @@ header h3{
     background: transparent;
     width: 5 rem;
     height: 2 rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     cursor:pointer;
     outline:none;
 }
