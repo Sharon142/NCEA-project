@@ -1,1 +1,5 @@
-alert('This is a webpage')
+const btnAdd = document.querySelector('.btn-add');
+
+btnAdd.addEventListener('click', () =>{
+    console.log('open modal');
+});
