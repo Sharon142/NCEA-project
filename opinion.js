@@ -33,10 +33,9 @@ window.addEventListener('click',  e =>{
 });
 
 //Get all scientists
-const db = firebase.firestore();
 db.collection('user').get().then(querySnapshot => {
     querySnapshot.forEach(doc => {
-        renderUser(doc);
+        console.log(doc.data());
     })
 })
 
