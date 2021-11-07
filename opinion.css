@@ -68,5 +68,5 @@ header h3{
 
 .btn-edit:hover{
     background-color: var(--primary-color);
-    color: wheat;
+    color: var(--primary-color);
 }
