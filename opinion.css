@@ -131,6 +131,13 @@ header h3{
     padding:2rem;
 }
 
+.btn-modal{
+    background: var(--primary-color);
+    border: none;
+    color:aliceblue;
+    width: 9rem;
+}
+
 input{
     width:100%;
     height:2.2 rem;
