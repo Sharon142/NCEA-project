@@ -21,6 +21,12 @@ const renderUser = doc => {
         </tr>
     `;
     tableUsers.insertAdjacentHTML('beforeend', tr);
+
+//Click delete
+const btnDelete = document.querySelector('.btn-delete');
+btnDelete.addEventListener('click', () => {
+    console.log('user deleted');
+});
 }
 
 //Click add button
