@@ -1,4 +1,5 @@
 const addModal = document.querySelector('.add-modal');
+const addModalForm = document.querySelector('.add-modal .form');
 const btnAdd = document.querySelector('.btn-add');
 const tableUsers = document.querySelector('.table-users');
 
@@ -37,6 +38,11 @@ db.collection('user').get().then(querySnapshot => {
     querySnapshot.forEach(doc => {
         renderUser(doc);
     })
+});
+
+//Click submit in add modal
+addModalForm.addEventListener('submit', () => {
+console.log('button submitted!')
 })
 
 
