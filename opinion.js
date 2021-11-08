@@ -7,8 +7,8 @@ const tableUsers = document.querySelector('.table-users');
 
 //Create element and render scientists
 const renderUser = doc => {
-    const tr = `
-    <tr>
+    const tr = 
+        <tr data-id='${doc.id}'>
             <td>${doc.data().firstName}</td>
             <td>${doc.data().lastName}</td>
             <td>${doc.data().achievement}</td>
@@ -23,10 +23,15 @@ const renderUser = doc => {
     tableUsers.insertAdjacentHTML('beforeend', tr);
 
 //Click delete
-const btnDelete = document.querySelector('.btn-delete');
+const btnDelete = document.querySelector(`data-id='${doc.id}'.btn-delete`);
 btnDelete.addEventListener('click', () => {
-    console.log('user deleted');
+  db.collection('user').doc(`$[doc.id]`).delete().then(() => {
+      console.log('Document successfully deleted!');
+  }).catch(err => {
+      console.log('Error removing document', err);
+    });
 });
+
 }
 
 //Click add button
