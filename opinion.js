@@ -7,7 +7,7 @@ const btnAdd = document.querySelector('.btn-add');
 //modal edit
 const editModal = document.querySelector ('.edit-modal');
 const editModalForm = document.querySelector ('.edit-modal .form');
-const btnAdd = document.querySelector('.btn-add');
+const btnEdit = document.querySelector('.btn-edit');
 
 const tableUsers = document.querySelector('.table-users');
 
