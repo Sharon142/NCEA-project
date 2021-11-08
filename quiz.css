@@ -1,7 +1,3 @@
-#intro {text-align: center; color:black;}
-#greetings{text-align: center; color:black;}
-#quiz{text-align: center; color:black;}
-body {background-color: darkturquoise;}
 /* The Overlay (background) */
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
@@ -59,3 +55,7 @@ body {background-color: darkturquoise;}
     }
   }
   
+  #intro {text-align: center; color:black;}
+#greetings{text-align: center; color:black;}
+#quiz{text-align: center; color:black;}
+body {background-color: darkturquoise;}
