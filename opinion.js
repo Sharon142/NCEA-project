@@ -20,8 +20,9 @@ const tr =
 <tr data id= '${doc.id}'>
     <td>${doc.data().firstName}</td>
     <td>${doc.data().lastName}</td>
-    <td>${doc.data().phone}</td>
-    <td>${doc.data().email}</td>
+    <td>${doc.data().invetion}</td>
+    <td>${doc.data().achievement}</td>
+    <td>${doc.data().other}</td>
     <td>
     <button class="btn btn-edit">Edit </button>
     <button class="btn btn-delete">Delete </button>
@@ -38,8 +39,8 @@ editModal.classList.add(`modal-show`);
 id = doc.id;
 editModalForm.firstName.value = doc.data().firstName;
     editModalForm.lastName.value = doc.data().lastName;
-    editModalForm.achievement.value = doc.data().achievement;
     editModalForm.invention.value = doc.data().invention;
+    editModalForm.achievement.value = doc.data().achievement;    
     editModalForm.other.value = doc.data().other;
     });
     
@@ -59,7 +60,6 @@ editModalForm.firstName.value = doc.data().firstName;
 //Click add button
 btnAdd.addEventListener('click', () =>{
     addModal.classList.add('modal-show');
-
     addModalForm.firstName.value = '';
     addModalForm.lastName.value = '';
     addModalForm.invention.value = '';
@@ -107,8 +107,8 @@ addModalForm.addEventListener('submit', e => {
     db.collection('user').add({
         firstName: addModalForm.firstName.value,
         lastName: addModalForm.lastName.value,
-        achievement: addModalForm.achievement.value,
         invention: addModalForm.invention.value,
+        achievement: addModalForm.achievement.value,
         other: addModalForm.other.value,
     });
     modalWrapper.classList.remove('modal-show');
@@ -120,8 +120,8 @@ editModalForm.addEventListener('submit', e => {
      db.collection('user').doc(id).update({
         firstName: editModalForm.firstName.value,
         lastName: editModalForm.lastName.value,
-        achievement: editModalForm.achievement.value,
         invention: editModalForm.invention.value,
+        achievement: editModalForm.achievement.value,
         other: editModalForm.other.value,
      });
      editModal.classList.remove('modal-show');
