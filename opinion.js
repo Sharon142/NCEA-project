@@ -59,6 +59,12 @@ editModalForm.firstName.value = doc.data().firstName;
 //Click add button
 btnAdd.addEventListener('click', () =>{
     addModal.classList.add('modal-show');
+
+    addModalForm.firstName.value = '';
+    addModalForm.lastName.value = '';
+    addModalForm.invention.value = '';
+    addModalForm.achievement.value = '';
+    addModalForm.other.value = '';
 });
 //user click anywhere outside the form
 window.addEventListener('click',  e =>{
@@ -66,12 +72,34 @@ window.addEventListener('click',  e =>{
       addModal.classList.remove('modal-show');
     }
 });
- //Get all scientists
-db.collection('user').get().then(querySnapshot => {
-    querySnapshot.forEach(doc => {
-        renderUser(doc);
+
+//Get all users
+//db.collection('users').get().then(querySnapshot =>{//error 
+// querySnapshot.forEach(doc =>{
+//     renderUser(doc);
+//   })
+//});
+
+//Real time listener
+db.collection('users').onSnapshot(snapshot => {
+    snapshot.docChanges().forEach(change => {
+        if(change.type === 'added'){
+            renderUser(change.doc);
+        }
+        if (change.type === 'removed'){
+          let tr = document.querySelector(`[data-id]='${change.doc.id}'`);
+          let tbody = tr.parentElement;
+          tableUsers.removeChild(tbody);
+        }
+        if (change.type === 'modified'){
+            let tr = document.querySelector(`[data-id]='${change.doc.id}'`);
+            let tbody = tr.parentElement;
+            tableUsers.removeChild(tbody);
+            renderUser(change.doc);
+          }
     })
-});
+})
+
 //Click submit in add modal
 addModalForm.addEventListener('submit', e => {
     e.preventDefault();
