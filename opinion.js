@@ -20,9 +20,8 @@ const tr =
 <tr data id= '${doc.id}'>
     <td>${doc.data().firstName}</td>
     <td>${doc.data().lastName}</td>
-    <td>${doc.data().invention}</td>
-    <td>${doc.data().achievement}</td>
-    <td>${doc.data().other}</td>
+    <td>${doc.data().phone}</td>
+    <td>${doc.data().email}</td>
     <td>
     <button class="btn btn-edit">Edit </button>
     <button class="btn btn-delete">Delete </button>
@@ -59,7 +58,6 @@ btnDelete.addEventListener('click', () => {
 //Click add user
 btnAdd.addEventListener('click', () =>{
     addModal.classList.add('modal-show');
-
     addModalForm.firstName.value = '';
     addModalForm.lastName.value = '';
     addModalForm.invention.value = '';
