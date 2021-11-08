@@ -1,3 +1,5 @@
+const modalWrapper = document.querySelector('.modal-wrapper');
+//modal add
 const addModal = document.querySelector('.add-modal');
 const addModalForm = document.querySelector('.add-modal .form');
 const btnAdd = document.querySelector('.btn-add');
@@ -41,8 +43,17 @@ db.collection('user').get().then(querySnapshot => {
 });
 
 //Click submit in add modal
-addModalForm.addEventListener('submit', () => {
-console.log('button submitted!')
+addModalForm.addEventListener('submit', e => {
+    e.preventDefault();
+    console.log(addModalForm.firstName.value)
+    db.collection('user').add({
+        firstName: addModalForm.firstName.value,
+        lastName: addModalForm.lastName.value,
+        achievement: addModalForm.achievement.value,
+        invention: addModalForm.invention.value,
+        other: addModalForm.other.value,
+    });
+    modalWrapper.classList.remove('modal-show');
 })
 
 
