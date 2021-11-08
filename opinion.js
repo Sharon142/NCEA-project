@@ -86,3 +86,15 @@ addModalForm.addEventListener('submit', e => {
     modalWrapper.classList.remove('modal-show');
 })
 
+//Click submit in edit modal
+editModalForm.addEventListener('submit', e => {
+     e.preventDefault();
+     db.collection('user').doc(id).update({
+        firstName: editModalForm.firstName.value,
+        lastName: editModalForm.lastName.value,
+        achievement: editModalForm.achievement.value,
+        invention: editModalForm.invention.value,
+        other: editModalForm.other.value,
+     });
+     editModal.classList.remove('modal-show');
+})
