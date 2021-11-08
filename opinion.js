@@ -5,6 +5,10 @@ const addModalForm = document.querySelector('.add-modal .form');
 const btnAdd = document.querySelector('.btn-add');
 const tableUsers = document.querySelector('.table-users');
 
+//modal edit
+const editModal = document.querySelector('.edit-modal');
+const editModalForm = document.querySelector('.edit-modal .form');
+
 //Create element and render scientists
 const renderUser = doc => {
     const tr =  
@@ -21,15 +25,27 @@ const renderUser = doc => {
         </tr>
     `;
     tableUsers.insertAdjacentHTML('beforeend', tr);
+    //Click edit user
+    const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+    btnEdit.addEventListener('click', () =>{
+    editModal.classList.add(`modal-show`);
     
-    //Click delete
-    const btnDelete = document.querySelector(`[data-id ='${doc.id}'] .btn-delete`);
+    id = doc.id;
+    editModalForm.firstName.value = doc.data().firstName;
+    editModalForm.lastName.value = doc.data().lastName;
+    editModalForm.achievement.value = doc.data().achievement;
+    editModalForm.invention.value = doc.data().invention;
+    editModalForm.other.value = doc.data().other;
+    });
+    
+    //Click delete user
+    const btnDelete = document.querySelector(`[data.id= '$(doc.id)']'.btn-delete`);
     btnDelete.addEventListener('click', () => {
-      db.collection('user').doc(`$[doc.id]`).delete().then(() => {
-          console.log('Document successfully deleted!');
-      }).catch(err => {
-          console.log('Error removing document', err);
-        });
+        db.collection('users').doc(`$(doc.id)`).delete().then(() =>{
+            console.log('Document succesfully deleted!');
+        }).catch(err =>{
+            console.log('Error removing document', err);
+        })
     });
 }
 
